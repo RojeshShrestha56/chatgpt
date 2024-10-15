@@ -1,2 +1,4 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 String BASE_URL = "https://api.openai.com/v1";
-String API_KEY = "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";
+String? API_KEY = dotenv.env['OPENAI_API_KEY'];
